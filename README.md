@@ -1,5 +1,5 @@
 # BatchDeleteExample
-iOS Batch Delete
+[Swift 3] iOS Batch Delete
 
 Check AppDelegate for the sample.
 
