@@ -1,0 +1,2 @@
+# BatchDeleteExample
+iOS Batch Delete
