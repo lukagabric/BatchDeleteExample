@@ -92,9 +92,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         productsToKeepRequest.predicate = NSPredicate(format: "%K contains %@", "productName", ".1")
         
         //all objects except objectsToKeepRequest are duplicates
-        let productsToKeepExpression = NSFetchRequestExpression.expression(forFetch: NSExpression(forConstantValue: productsToKeepRequest),
-                                                                           context: NSExpression(forConstantValue: context),
-                                                                           countOnly: false)
+        let productsToKeepExpression =
+            NSFetchRequestExpression.expression(forFetch: NSExpression(forConstantValue: productsToKeepRequest),
+                                                context: NSExpression(forConstantValue: context),
+                                                countOnly: false)
         
         let duplicatesRequest = Product.fetchRequest() as NSFetchRequest<NSFetchRequestResult>
         duplicatesRequest.predicate = NSPredicate(format: "NOT SELF IN %@", argumentArray: [productsToKeepExpression])
@@ -107,6 +108,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //so you'd be able to use the fetched products for binding to UI (e.g. in a UITableView)
         let context = self.persistentContainer.viewContext
         context.performAndWait {
+            context.refreshAllObjects()
+            
             let productsRequest = Product.fetchRequest() as NSFetchRequest<Product>
             let sort = NSSortDescriptor(key: "productName", ascending: true)
             productsRequest.sortDescriptors = [sort]

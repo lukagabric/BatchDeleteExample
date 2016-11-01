@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4157DD491DC8FF25000D2B36 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157DD481DC8FF25000D2B36 /* Product.swift */; };
 		419E333D1DC74ADB00B669D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E333C1DC74ADB00B669D1 /* AppDelegate.swift */; };
 		419E333F1DC74ADB00B669D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E333E1DC74ADB00B669D1 /* ViewController.swift */; };
 		419E33421DC74ADB00B669D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419E33401DC74ADB00B669D1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4157DD481DC8FF25000D2B36 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		419E33391DC74ADB00B669D1 /* CoreDataDuplicates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDuplicates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419E333C1DC74ADB00B669D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419E333E1DC74ADB00B669D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		419E333B1DC74ADB00B669D1 /* CoreDataDuplicates */ = {
 			isa = PBXGroup;
 			children = (
+				4157DD481DC8FF25000D2B36 /* Product.swift */,
 				419E333C1DC74ADB00B669D1 /* AppDelegate.swift */,
 				419E333E1DC74ADB00B669D1 /* ViewController.swift */,
 				419E33401DC74ADB00B669D1 /* Main.storyboard */,
@@ -94,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = PROGOS;
 				TargetAttributes = {
 					419E33381DC74ADB00B669D1 = {
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419E333F1DC74ADB00B669D1 /* ViewController.swift in Sources */,
+				4157DD491DC8FF25000D2B36 /* Product.swift in Sources */,
 				419E333D1DC74ADB00B669D1 /* AppDelegate.swift in Sources */,
 				419E33451DC74ADB00B669D1 /* CoreDataDuplicates.xcdatamodeld in Sources */,
 			);
@@ -185,6 +189,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -234,6 +239,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
